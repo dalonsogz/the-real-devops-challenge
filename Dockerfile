@@ -7,10 +7,10 @@ COPY src /app/src
 
 RUN apt update
 RUN apt-get update
-RUN apt-get install python3.6 -y
+RUN apt-get install python3 -y
 RUN apt-get install python3-pip -y
 
-RUN pip install -r /app/requirements.txt
+RUN pip3 install -r /app/requirements.txt
 
 EXPOSE 8080
 
