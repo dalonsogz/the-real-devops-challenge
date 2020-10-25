@@ -6,7 +6,7 @@ COPY requirements.txt /app/requirements.txt
 COPY src /app/src 
 
 RUN                             \ 
-  yum -y install python 
+  yum -y install python      && \
   yum clean all
 
 RUN curl -O https://bootstrap.pypa.io/get-pip.py  && \
